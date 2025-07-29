@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Plano de Ensino - Uneduvale</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body class="bg-light">
+  <div class="container my-5">
+    <img src="logo.png" alt="Logo Uneduvale" class="img-fluid mb-4" style="max-width: 200px;">
+    <h1 class="mb-4 text-primary">Plano de Ensino - Uneduvale</h1>
+    <form id="planoForm">
+      <div class="card p-4 mb-3">
+        <h2 class="h5">Identificação</h2>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label class="form-label">Curso</label>
+            <input type="text" name="curso" class="form-control" value="Análise e Desenvolvimento de Sistemas">
+          </div>
+          <div class="col-md-6 mb-3">
+            <label class="form-label">Unidade Curricular</label>
+            <input type="text" name="unidadeCurricular" class="form-control" value="Programação Web">
+          </div>
+          <div class="col-md-6 mb-3">
+            <label class="form-label">Docente</label>
+            <input type="text" name="docente" class="form-control" value="Prof. Diego Moraes">
+          </div>
+          <div class="col-md-3 mb-3">
+            <label class="form-label">Turno</label>
+            <input type="text" name="turno" class="form-control" value="Noturno">
+          </div>
+          <div class="col-md-3 mb-3">
+            <label class="form-label">Ano Letivo</label>
+            <input type="number" name="ano" class="form-control" value="2025">
+          </div>
+          <div class="col-md-3 mb-3">
+            <label class="form-label">Termo</label>
+            <select name="termo" class="form-select">
+              <option value="1º termo">1º termo</option>
+              <option value="2º termo">2º termo</option>
+              <option value="3º termo">3º termo</option>
+              <option value="4º termo" selected>4º termo</option>
+              <option value="5º termo">5º termo</option>
+              <option value="6º termo">6º termo</option>
+            </select>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label class="form-label">Carga Horária</label>
+            <input type="number" name="cargaHoraria" class="form-control" value="60">
+          </div>         
+        </div>
+      </div>
+
+      <div class="card p-4 mb-3">
+        <h2 class="h5">Ementa</h2>
+        <textarea name="ementa" class="form-control" rows="3">Introdução ao desenvolvimento de sistemas web, HTML, CSS, JavaScript, frameworks e boas práticas.</textarea>  
+      </div>
+
+      <div class="card p-4 mb-3">
+        <h2 class="h5">Competências / Objetivos de Aprendizagem</h2>
+        <textarea name="competencias" class="form-control" rows="3">Desenvolver sistemas web responsivos, aplicar boas práticas de programação e utilizar frameworks modernos.</textarea>
+      </div>
+
+      <div class="card p-4 mb-3">
+        <h2 class="h5">Habilidades</h2>
+        <textarea name="habilidades" class="form-control" rows="3">Criar páginas dinâmicas, interagir com APIs e implementar layouts acessíveis.</textarea>
+      </div>
+
+      <div class="card p-4 mb-3">
+        <h2 class="h5">Bibliografia</h2>
+        <div class="mb-3">
+          <label class="form-label">Básica</label>
+          <textarea name="bibliografiaBasica" class="form-control" rows="2">MOCKUS, L. Programação Web Moderna. 3 ed. São Paulo: TechPress, 2023.</textarea>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Complementar</label>
+          <textarea name="bibliografiaComplementar" class="form-control" rows="2">DUCKETT, J. HTML and CSS: Design and Build Websites. Wiley, 2011.</textarea>
+        </div>
+      </div>
+
+      <!-- Início das 20 aulas -->
+<!-- Cada aula tem um bloco com data, conteúdo e avaliação -->
+
+<div class="border rounded p-3 mb-3 bg-white">
+  <h5 class="text-secondary">Aula 1</h5>
+  <div class="row">
+    <div class="col-md-3 mb-2">
+      <label class="form-label">Período</label>
+      <input type="date" name="periodo_1" class="form-control" value="2025-08-01">
+    </div>
+    <div class="col-md-4 mb-2">
+      <label class="form-label">Conteúdo Curricular</label>
+      <textarea name="conteudo_1" class="form-control" rows="2">Introdução ao HTML</textarea>
+    </div>
+    <div class="col-md-5 mb-2">
+      <label class="form-label">Avaliação</label>
+      <textarea name="avaliacao_1" class="form-control" rows="2">Atividade prática de marcação HTML</textarea>
+    </div>
+  </div>
+</div>
+
+<div class="border rounded p-3 mb-3 bg-white">
+  <h5 class="text-secondary">Aula 2</h5>
+  <div class="row">
+    <div class="col-md-3 mb-2">
+      <label class="form-label">Período</label>
+      <input type="date" name="periodo_2" class="form-control" value="2025-08-08">
+    </div>
+    <div class="col-md-4 mb-2">
+      <label class="form-label">Conteúdo Curricular</label>
+      <textarea name="conteudo_2" class="form-control" rows="2">Elementos e estrutura HTML</textarea>
+    </div>
+    <div class="col-md-5 mb-2">
+      <label class="form-label">Avaliação</label>
+      <textarea name="avaliacao_2" class="form-control" rows="2">Exercício com listas e tabelas</textarea>
+    </div>
+  </div>
+</div>
+
+<div class="border rounded p-3 mb-3 bg-white">
+  <h5 class="text-secondary">Aula 3</h5>
+  <div class="row">
+    <div class="col-md-3 mb-2">
+      <label class="form-label">Período</label>
+      <input type="date" name="periodo_3" class="form-control" value="2025-08-15">
+    </div>
+    <div class="col-md-4 mb-2">
+      <label class="form-label">Conteúdo Curricular</label>
+      <textarea name="conteudo_3" class="form-control" rows="2">Formulários e tabelas</textarea>
+    </div>
+    <div class="col-md-5 mb-2">
+      <label class="form-label">Avaliação</label>
+      <textarea name="avaliacao_3" class="form-control" rows="2">Formulário funcional</textarea>
+    </div>
+  </div>
+</div>
+
+<div class="border rounded p-3 mb-3 bg-white">
+  <h5 class="text-secondary">Aula 4</h5>
+  <div class="row">
+    <div class="col-md-3 mb-2">
+      <label class="form-label">Período</label>
+      <input type="date" name="periodo_4" class="form-control" value="2025-08-22">
+    </div>
+    <div class="col-md-4 mb-2">
+      <label class="form-label">Conteúdo Curricular</label>
+      <textarea name="conteudo_4" class="form-control" rows="2">Introdução ao CSS</textarea>
+    </div>
+    <div class="col-md-5 mb-2">
+      <label class="form-label">Avaliação</label>
+      <textarea name="avaliacao_4" class="form-control" rows="2">Estilização de página HTML</textarea>
+    </div>
+  </div>
+</div>
+
+<!-- Aulas 5 a 20 seguem o mesmo padrão -->
+
+<div class="border rounded p-3 mb-3 bg-white">
+  <h5 class="text-secondary">Aula 5</h5>
+  <div class="row">
+    <div class="col-md-3 mb-2">
+      <label class="form-label">Período</label>
+      <input type="date" name="periodo_5" class="form-control" value="2025-08-29">
+    </div>
+    <div class="col-md-4 mb-2">
+      <label class="form-label">Conteúdo Curricular</label>
+      <textarea name="conteudo_5" class="form-control" rows="2">Box model e seletores</textarea>
+    </div>
+    <div class="col-md-5 mb-2">
+      <label class="form-label">Avaliação</label>
+      <textarea name="avaliacao_5" class="form-control" rows="2">Exercício com classes e seletores</textarea>
+    </div>
+  </div>
+</div>
+
+<div class="border rounded p-3 mb-3 bg-white">
+  <h5 class="text-secondary">Aula 6</h5>
+  <div class="row">
+    <div class="col-md-3 mb-2">
+      <label class="form-label">Período</label>
+      <input type="date" name="periodo_6" class="form-control" value="2025-09-05">
+    </div>
+    <div class="col-md-4 mb-2">
+      <label class="form-label">Conteúdo Curricular</label>
+      <textarea name="conteudo_6" class="form-control" rows="2">Layouts com Flexbox e Grid</textarea>
+    </div>
+    <div class="col-md-5 mb-2">
+      <label class="form-label">Avaliação</label>
+      <textarea name="avaliacao_6" class="form-control" rows="2">Mini projeto com Grid</textarea>
+    </div>
+  </div>
+</div>
+
+<div class="border rounded p-3 mb-3 bg-white">
+  <h5 class="text-secondary">Aula 7</h5>
+  <div class="row">
+    <div class="col-md-3 mb-2">
+      <label class="form-label">Período</label>
+      <input type="date" name="periodo_7" class="form-control" value="2025-09-12">
+    </div>
+    <div class="col-md-4 mb-2">
+      <label class="form-label">Conteúdo Curricular</label>
+      <textarea name="conteudo_7" class="form-control" rows="2">Introdução ao JavaScript</textarea>
+    </div>
+    <div class="col-md-5 mb-2">
+      <label class="form-label">Avaliação</label>
+      <textarea name="avaliacao_7" class="form-control" rows="2">Quiz JavaScript básico</textarea>
+    </div>
+  </div>
+</div>
+
+<div class="border rounded p-3 mb-3 bg-white">
+  <h5 class="text-secondary">Aula 8</h5>
+  <div class="row">
+    <div class="col-md-3 mb-2">
+      <label class="form-label">Período</label>
+      <input type="date" name="periodo_8" class="form-control" value="2025-09-19">
+    </div>
+    <div class="col-md-4 mb-2">
+      <label class="form-label">Conteúdo Curricular</label>
+      <textarea name="conteudo_8" class="form-control" rows="2">Variáveis e operadores</textarea>
+    </div>
+    <div class="col-md-5 mb-2">
+      <label class="form-label">Avaliação</label>
+      <textarea name="avaliacao_8" class="form-control" rows="2">Desafio com operadores</textarea>
+    </div>
+  </div>
+</div>
+
+<div class="border rounded p-3 mb-3 bg-white">
+  <h5 class="text-secondary">Aula 9</h5>
+  <div class="row">
+    <div class="col-md-3 mb-2">
+      <label class="form-label">Período</label>
+      <input type="date" name="periodo_9" class="form-control" value="2025-09-26">
+    </div>
+    <div class="col-md-4 mb-2">
+      <label class="form-label">Conteúdo Curricular</label>
+      <textarea name="conteudo_9" class="form-control" rows="2">Funções e eventos</textarea>
+    </div>
+    <div class="col-md-5 mb-2">
+      <label class="form-label">Avaliação</label>
+      <textarea name="avaliacao_9" class="form-control" rows="2">Formulário com eventos JS</textarea>
+    </div>
+  </div>
+</div>
+
+<div class="border rounded p-3 mb-3 bg-white">
+  <h5 class="text-secondary">Aula 10</h5>
+  <div class="row">
+    <div class="col-md-3 mb-2">
+      <label class="form-label">Período</label>
+      <input type="date" name="periodo_10" class="form-control" value="2025-10-03">
+    </div>
+    <div class="col-md-4 mb-2">
+      <label class="form-label">Conteúdo Curricular</label>
+      <textarea name="conteudo_10" class="form-control" rows="2">DOM e manipulação</textarea>
+    </div>
+    <div class="col-md-5 mb-2">
+      <label class="form-label">Avaliação</label>
+      <textarea name="avaliacao_10" class="form-control" rows="2">Script de interação DOM</textarea>
+    </div>
+  </div>
+</div>
+
+<!-- Aulas 11 a 20 seguem na próxima resposta para facilitar a leitura. Deseja que eu continue agora? -->
+ <div class="border rounded p-3 mb-3 bg-white">
+  <h5 class="text-secondary">Aula 11</h5>
+  <div class="row">
+    <div class="col-md-3 mb-2">
+      <label class="form-label">Período</label>
+      <input type="date" name="periodo_11" class="form-control" value="2025-10-10">
+    </div>
+    <div class="col-md-4 mb-2">
+      <label class="form-label">Conteúdo Curricular</label>
+      <textarea name="conteudo_11" class="form-control" rows="2">Validação de formulários</textarea>
+    </div>
+    <div class="col-md-5 mb-2">
+      <label class="form-label">Avaliação</label>
+      <textarea name="avaliacao_11" class="form-control" rows="2">Validação com JS</textarea>
+    </div>
+  </div>
+</div>
+
+<div class="border rounded p-3 mb-3 bg-white">
+  <h5 class="text-secondary">Aula 12</h5>
+  <div class="row">
+    <div class="col-md-3 mb-2">
+      <label class="form-label">Período</label>
+      <input type="date" name="periodo_12" class="form-control" value="2025-10-17">
+    </div>
+    <div class="col-md-4 mb-2">
+      <label class="form-label">Conteúdo Curricular</label>
+      <textarea name="conteudo_12" class="form-control" rows="2">APIs e fetch</textarea>
+    </div>
+    <div class="col-md-5 mb-2">
+      <label class="form-label">Avaliação</label>
+      <textarea name="avaliacao_12" class="form-control" rows="2">Consulta de API pública</textarea>
+    </div>
+  </div>
+</div>
+
+<div class="border rounded p-3 mb-3 bg-white">
+  <h5 class="text-secondary">Aula 13</h5>
+  <div class="row">
+    <div class="col-md-3 mb-2">
+      <label class="form-label">Período</label>
+      <input type="date" name="periodo_13" class="form-control" value="2025-10-24">
+    </div>
+    <div class="col-md-4 mb-2">
+      <label class="form-label">Conteúdo Curricular</label>
+      <textarea name="conteudo_13" class="form-control" rows="2">Introdução a frameworks</textarea>
+    </div>
+    <div class="col-md-5 mb-2">
+      <label class="form-label">Avaliação</label>
+      <textarea name="avaliacao_13" class="form-control" rows="2">Criação de layout com framework</textarea>
+    </div>
+  </div>
+</div>
+
+<div class="border rounded p-3 mb-3 bg-white">
+  <h5 class="text-secondary">Aula 14</h5>
+  <div class="row">
+    <div class="col-md-3 mb-2">
+      <label class="form-label">Período</label>
+      <input type="date" name="periodo_14" class="form-control" value="2025-10-31">
+    </div>
+    <div class="col-md-4 mb-2">
+      <label class="form-label">Conteúdo Curricular</label>
+      <textarea name="conteudo_14" class="form-control" rows="2">Bootstrap 5</textarea>
+    </div>
+    <div class="col-md-5 mb-2">
+      <label class="form-label">Avaliação</label>
+      <textarea name="avaliacao_14" class="form-control" rows="2">Estilização com componentes Bootstrap</textarea>
+    </div>
+  </div>
+</div>
+
+<div class="border rounded p-3 mb-3 bg-white">
+  <h5 class="text-secondary">Aula 15</h5>
+  <div class="row">
+    <div class="col-md-3 mb-2">
+      <label class="form-label">Período</label>
+      <input type="date" name="periodo_15" class="form-control" value="2025-11-07">
+    </div>
+    <div class="col-md-4 mb-2">
+      <label class="form-label">Conteúdo Curricular</label>
+      <textarea name="conteudo_15" class="form-control" rows="2">Integração HTML + JS</textarea>
+    </div>
+    <div class="col-md-5 mb-2">
+      <label class="form-label">Avaliação</label>
+      <textarea name="avaliacao_15" class="form-control" rows="2">Integração funcional com JS</textarea>
+    </div>
+  </div>
+</div>
+
+<div class="border rounded p-3 mb-3 bg-white">
+  <h5 class="text-secondary">Aula 16</h5>
+  <div class="row">
+    <div class="col-md-3 mb-2">
+      <label class="form-label">Período</label>
+      <input type="date" name="periodo_16" class="form-control" value="2025-11-14">
+    </div>
+    <div class="col-md-4 mb-2">
+      <label class="form-label">Conteúdo Curricular</label>
+      <textarea name="conteudo_16" class="form-control" rows="2">Projeto prático - Parte 1</textarea>
+    </div>
+    <div class="col-md-5 mb-2">
+      <label class="form-label">Avaliação</label>
+      <textarea name="avaliacao_16" class="form-control" rows="2">Implementação da interface</textarea>
+    </div>
+  </div>
+</div>
+
+<div class="border rounded p-3 mb-3 bg-white">
+  <h5 class="text-secondary">Aula 17</h5>
+  <div class="row">
+    <div class="col-md-3 mb-2">
+      <label class="form-label">Período</label>
+      <input type="date" name="periodo_17" class="form-control" value="2025-11-21">
+    </div>
+    <div class="col-md-4 mb-2">
+      <label class="form-label">Conteúdo Curricular</label>
+      <textarea name="conteudo_17" class="form-control" rows="2">Projeto prático - Parte 2</textarea>
+    </div>
+    <div class="col-md-5 mb-2">
+      <label class="form-label">Avaliação</label>
+      <textarea name="avaliacao_17" class="form-control" rows="2">Entrega do projeto completo</textarea>
+    </div>
+  </div>
+</div>
+
+<div class="border rounded p-3 mb-3 bg-white">
+  <h5 class="text-secondary">Aula 18</h5>
+  <div class="row">
+    <div class="col-md-3 mb-2">
+      <label class="form-label">Período</label>
+      <input type="date" name="periodo_18" class="form-control" value="2025-11-28">
+    </div>
+    <div class="col-md-4 mb-2">
+      <label class="form-label">Conteúdo Curricular</label>
+      <textarea name="conteudo_18" class="form-control" rows="2">Revisão de conteúdo</textarea>
+    </div>
+    <div class="col-md-5 mb-2">
+      <label class="form-label">Avaliação</label>
+      <textarea name="avaliacao_18" class="form-control" rows="2">Revisão e simulado</textarea>
+    </div>
+  </div>
+</div>
+
+<div class="border rounded p-3 mb-3 bg-white">
+  <h5 class="text-secondary">Aula 19</h5>
+  <div class="row">
+    <div class="col-md-3 mb-2">
+      <label class="form-label">Período</label>
+      <input type="date" name="periodo_19" class="form-control" value="2025-12-05">
+    </div>
+    <div class="col-md-4 mb-2">
+      <label class="form-label">Conteúdo Curricular</label>
+      <textarea name="conteudo_19" class="form-control" rows="2">Avaliação teórica</textarea>
+    </div>
+    <div class="col-md-5 mb-2">
+      <label class="form-label">Avaliação</label>
+      <textarea name="avaliacao_19" class="form-control" rows="2">Prova escrita</textarea>
+    </div>
+  </div>
+</div>
+
+<div class="border rounded p-3 mb-3 bg-white">
+  <h5 class="text-secondary">Aula 20</h5>
+  <div class="row">
+    <div class="col-md-3 mb-2">
+      <label class="form-label">Período</label>
+      <input type="date" name="periodo_20" class="form-control" value="2025-12-12">
+    </div>
+    <div class="col-md-4 mb-2">
+      <label class="form-label">Conteúdo Curricular</label>
+      <textarea name="conteudo_20" class="form-control" rows="2">Avaliação prática final</textarea>
+    </div>
+    <div class="col-md-5 mb-2">
+      <label class="form-label">Avaliação</label>
+      <textarea name="avaliacao_20" class="form-control" rows="2">Entrega do projeto final</textarea>
+    </div>
+  </div>
+</div>
+
+      <div class="text-center">
+        <button type="button" onclick="salvarJSON()" class="btn btn-success m-2">Salvar JSON</button>
+        <button type="button" onclick="carregarJSON()" class="btn btn-secondary m-2">Carregar JSON</button>
+        <button type="button" onclick="gerarPDF()" class="btn btn-primary m-2">Gerar PDF</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
