@@ -220,17 +220,10 @@ y = doc.lastAutoTable.finalY + 10;
 
   const aulas = [];
 for (let i = 1; i <= 20; i++) {
-  const dataISO = data[`periodo_${i}`] || ''; // AAAA-MM-DD
-  let dataFormatada = '';
-
-  if (dataISO) {
-    const [ano, mes, dia] = dataISO.split('-');
-    dataFormatada = `${dia}/${mes}/${ano}`;
-  }
+  
 
   aulas.push([
-    `Aula ${i}`,
-    dataFormatada,
+    `Aula ${i}`,    
     data[`conteudo_${i}`] || '',
     data[`avaliacao_${i}`] || ''
   ]);
@@ -238,7 +231,7 @@ for (let i = 1; i <= 20; i++) {
 
   doc.autoTable({
     startY: y,
-    head: [["Aula", "Data", "Conteúdo Curricular", "Avaliação"]],
+    head: [["Aula", "Conteúdo Curricular", "Avaliação"]],
     body: aulas,
     theme: 'grid',
     styles: {
@@ -252,10 +245,10 @@ for (let i = 1; i <= 20; i++) {
       halign: 'center'
     },
     columnStyles: {
-      0: { cellWidth: 20 },
-      1: { cellWidth: 30 },
-      2: { cellWidth: 70 },
-      3: { cellWidth: 70 }
+      0: { cellWidth: 63.33 }, // Dividido igualmente (190 / 3)
+      1: { cellWidth: 63.33 },
+      2: { cellWidth: 63.33 }
+    
     }
   });
 
